@@ -6,7 +6,7 @@ footer: 'Andy Lech - Build Better Mobile Apps with ReactiveUI'
 paginate: true
 ---
 
-<!-- @@@ Page - Talk Title @@@ -->
+<!-- @@@ Talk Title @@@ -->
 
 <!-- _footer: "" -->
 <!-- _paginate: skip -->
@@ -21,11 +21,43 @@ paginate: true
 
 ---
 
-<!-- @@@ Page - Sponsors @@@ -->
+<!-- @@@ Sponsors @@@ -->
 
-<!-- ![height:550px](./images/conferences/) -->
+<!-- _footer: "" -->
+<!-- _paginate: skip -->
 
-<!-- --- -->
+![height:640px](./images/sponsors/2026-Code-Mash-Sponsors.png)
+
+---
+
+<!-- @@@ Orlando Code Camp @@@ -->
+
+<!-- _footer: "" -->
+<!-- _paginate: skip -->
+
+![height:360px](./images/conferences/2026-Orlando-Code-Camp.png)
+
+#### Seminole State College, Sanford, FL
+
+[https://www.orlandocodecamp.com/](https://www.orlandocodecamp.com/)
+
+---
+
+<!-- @@@ Audience Questions @@@ -->
+
+<!-- _footer: "" -->
+<!-- _paginate: skip -->
+
+<!-- _class: talk_topics -->
+
+### Audience Polls
+
+* Written a mobile or desktop app before?
+* Used the MVVM pattern in their app?
+* Used Reactive Extensions (Rx.NET) before?
+* Used ReactiveUI (RxUI) or related libraries before?
+
+---
 
 <!-- @@@ Topics @@@ -->
 
@@ -33,15 +65,14 @@ paginate: true
 
 ### Topics
 
-- My Path to ReactiveUI
-- Architecting for Smart Data Consumption
-- How Reactive UI Helps
-- References
-- Questions
+* What is ReactiveUI?
+* My Path to ReactiveUI
+* Architecting for Smart Data Consumption
+* How Reactive UI Helps
 
 ---
 
-<!-- @@@ Section 1 @@@ -->
+<!-- @@@ Section - What is ReactiveUI? @@@ -->
 
 <!-- _class: section_title -->
 
@@ -49,7 +80,7 @@ paginate: true
 
 <br />
 
-### My Path to ReactiveUI
+### What is ReactiveUI?
 
 ---
 
@@ -65,6 +96,9 @@ paginate: true
 - ReactiveUI (RxUI) - [www.reactiveui.net](https://www.reactiveui.net/)
   A composable Model-View-ViewModel framework for all .NET platforms!
 
+- Dynamic Data - [github.com/reactivemarbles/DynamicData](https://github.com/reactivemarbles/DynamicData)
+  A library for managing complex operation on collections through Rx.NET
+
 - Refit - [reactiveui.github.io/refit](https://reactiveui.github.io/refit/)
   An automatic type-safe REST library for .NET Core, Xamarin and .NET
 
@@ -74,250 +108,13 @@ paginate: true
 - Splat - [github.com/reactiveui/splat](https://github.com/reactiveui/splat)
   A cross-platform library for service location, unit testing, and logging
 
-- Dynamic Data - [github.com/reactivemarbles/DynamicData](https://github.com/reactivemarbles/DynamicData)
-  A library for managing complex operation on collections through Rx.NET
-
 ---
 
-<!-- @@@ My Mobile Background @@@ -->
-
-<!-- _class: details_list -->
-
-### A Mobile History
-
-- 2008 or 2009 (?) - Reactive Extensions created by Microsoft
-
-- Early 2011 - ReactiveUI created
-
-- May 2014 - Xamarin.Forms launched
-
-- August 2015 - Hired to create apps for Android, iOS, Windows Phone
-
-- Late 2015 - Started using Refit for API mapping and Akavache for caching
-
-- Early 2016 - Started using VM navigation library derived from ReactiveUI
-
-- May 2020 - .NET MAUI announced
-
-- September 2020 - Saw Michael Stonis talk on ReactiveUI
-
-- October 2020 - Started using RxUI for VM navigation, testing, and more
-
-- May 2022 - .NET MAUI released
-
----
-
-<!-- @@@ Section 2 @@@ -->
-
-<!-- _class: section_title -->
-
-## Part 2
-
-<br />
-
-### Architecting for Smart Data Consumption
-
----
-
-<!-- @@@ Data and Testing Perspectives @@@ -->
-
-<!-- _class: details -->
-
-### Perspectives on Data and Testing
-
-<!-- Images -->
-
-<div class="columns-three">
-
-<div class="column">
-
-![width:400px](./images/isometric-house-profile-concept/17395.jpg)
-
-</div>
-
-<div class="column">
-
-![width:300px](./images/plumbing-problems-solution-isometric-infographic-poster/17767.jpg)
-
-</div>
-
-<div class="column">
-
-![width:400px](./images/smart-home-energy-generation-isometric-poster/16696.jpg)
-
-</div>
-
-</div>
-
-<!-- Labels -->
-
-<div class="columns-three">
-
-<div class="column">
-
-#### User
-
-</div>
-
-<div class="column">
-
-#### Web Site
-
-</div>
-
-<div class="column">
-
-#### Mobile App
-
-</div>
-
----
-
-<!-- @@@ Mobile Architecture - Simple @@@ -->
-
-### Mobile Architecture - Simple
-
-<!-- _class: details -->
-
-![width:1100px](./images/mobile-apps-high-level.drawio.svg)
-
-<div class="detail-summary">
-
-- App handles interactivity, page layouts, local caching, and API calls
-- API stack delivers only data or status codes in response to app requests
-- App pages tend to be focused on single tasks that call the API selectively
-- <b>Mobile/API devs focus more on reliable, just-in-time data delivery</b>
-
-</div>
-
----
-
-<!-- @@@ Mobile Apps - Components @@@ -->
-
-<!-- _class: details -->
-
-### Mobile Apps - Components
-
-<div class="columns-two">
-
-<div>
-
-#### _App (Client)_
-
-- Requests: API Calls
-- State Management: ViewModels, Cache
-- Data Mapping: API to App
-- Caching: Platform, Local DB
-- Resiliency: Network State
-- <b>Dev Focus: Interactivity, Data Updates, Layouts, State, API Calls</b>
-- <b>Data Goal: Smart Data Pipes (to API)</b>
-
-</div>
-
-<div>
-
-#### _API (Server/Cloud)_
-
-- Responses: Data (JSON/XML)
-- State Management: Auth Tokens
-- Data Mapping: Source to API
-- Caching: Server/Cloud
-- Resiliency: Server/Cloud, Services
-- <b>Dev Focus: Data, Status Codes, Messages</b>
-- <b>Data Goal: Smart Data Pipes (from App)</b>
-
-</div>
-
-</div>
-
----
-
-<!-- @@@ Mobile Architecture - Real World (Network) @@@ -->
-
-<!-- _class: details -->
-
-## Mobile Architecture - Real-world
-
-<div style="padding: 20px 0px;">
-
-- ViewModels
-  - Moving navigation out of the View allows ViewModels to be tested individually with frameworks like ReactiveUI (RxUI)
-- Api Services
-  - Individually testable to return app Models and not just Data Transfer Objects (DTOs)
-- Data Service
-  - Decides whether to call the local cache DB, the platform cache, an API endpoint, or a service based on the requested data and the app lifecycle
-
-</div>
-
----
-
-<!-- @@@ Mobile Architecture - MVVM @@@ -->
-
-<!-- _class: details -->
-
-## Mobile Architecture - MVVM
-
-<br />
-
-![width:1100px](./images/archtecture/MVVM%20Pattern%20-%20Wikipedia.svg)
-
----
-
-<!-- @@@ Mobile Architecture - Network @@@ -->
-
-<!-- _class: details -->
-
-## Mobile Architecture - Network
-
-<br />
-
-![width:1100px](./images/mobile-apps-real-world-network.drawio.svg)
-
----
-
-<!-- @@@ Mobile Architecture - Solution @@@ -->
-
-<!-- _class: details -->
-
-## Mobile Architecture - Solution
-
-<br />
-
-![width:1100px](./images/mobile-apps-real-world-solution.drawio.svg)
-
----
-
-<!-- @@@ Mobile Architecture - Testing @@@ -->
-
-<!-- _class: details -->
-
-## Mobile Architecture - Testing
-
-<br />
-
-![width:1100px](./images/mobile-apps-real-world-testing.drawio.svg)
-
----
-
-<!-- @@@ Section 3 @@@ -->
-
-<!-- _class: section_title -->
-
-## Part 3
-
-<br />
-
-### How ReactiveUI can Help
-
----
-
-<!-- @@@ Mobile Architecture - Solution @@@ -->
+<!-- @@@ Reactive Extensions @@@ -->
 
 <!-- _class: details -->
 
 ### Reactive Extensions
-
-<br />
 
 <div class="columns-two">
 
@@ -356,7 +153,7 @@ Console.ReadLine();
 
 ---
 
-<!-- @@@  @@@ -->
+<!-- @@@ ReactiveUI @@@ -->
 
 <!-- _class: details -->
 
@@ -397,44 +194,252 @@ this.WhenAnyValue(x => x.SearchQuery)
 
 ---
 
+<!-- @@@ My Path to ReactiveUI @@@ -->
+
+<!-- _class: details_list -->
+
+### My Path to ReactiveUI
+
+- 2009 - Reactive Extensions released by Microsoft
+
+- Early 2011 - ReactiveUI created
+
+- May 2014 - Xamarin.Forms launched
+
+- August 2015 - Hired to create apps for Android, iOS, Windows Phone
+
+- Late 2015 - Started using Refit for API mapping and Akavache for caching
+
+- Early 2016 - Started using VM navigation library derived from ReactiveUI
+
+- May 2020 - .NET MAUI announced
+
+- September 2020 - Saw Michael Stonis talk on ReactiveUI
+
+- October 2020 - Started using RxUI for VM navigation, testing, and more
+
+- May 2022 - .NET MAUI released
+
+---
+
+<!-- @@@ Section 2 - Architecture @@@ -->
+
+<!-- _class: section_title -->
+
+## Part 2
+
+<br />
+
+### Architecting for Smart Data Consumption
+
+---
+
+<!-- @@@ Data and Testing Perspectives @@@ -->
+
+<!-- _class: details -->
+
+### Perspectives on Data and Testing
+
+<!-- Images -->
+
+<div class="columns-three">
+
+<div class="column">
+
+![width:400px](./images/houses/isometric-house-profile-concept/17395.jpg)
+
+</div>
+
+<div class="column">
+
+![width:300px](./images/houses/plumbing-problems-solution-isometric-infographic-poster/17767.jpg)
+
+</div>
+
+<div class="column">
+
+![width:400px](./images/houses/smart-home-energy-generation-isometric-poster/16696.jpg)
+
+</div>
+
+</div>
+
+<!-- Labels -->
+
+<div class="columns-three">
+
+<div class="column">
+
+#### User
+
+</div>
+
+<div class="column">
+
+#### Web Site
+
+</div>
+
+<div class="column">
+
+#### Mobile App
+
+</div>
+
+---
+
+<!-- @@@ Mobile Architecture - Components @@@ -->
+
+### Mobile Architecture - Components
+
+<!-- _class: details -->
+
+![width:1100px](./images/architecture/mobile-components.drawio.svg)
+
+<div class="detail-summary">
+
+- App handles interactivity, page layouts, local caching, and API calls
+- API stack delivers only data or status codes in response to app requests
+- App pages tend to be focused on single tasks that call the API selectively
+- <b>Mobile/API devs focus more on reliable, just-in-time data delivery</b>
+
+</div>
+
+---
+
+<!-- @@@ MVVM Architecture @@@ -->
+
+<!-- _class: details -->
+
+## MVVM Pattern - Theory
+
+<br />
+
+![width:1000px](./images/architecture/MVVM%20Pattern%20-%20Wikipedia.svg)
+
+<div class="attribution">
+    <a href="https://en.wikipedia.org/wiki/File:MVVMPattern.svg">
+    Image from Wikipedia</a>
+</div>
+
+<br />
+
+---
+
+<!-- @@@ Mobile Architecture - Real World @@@ -->
+
+<!-- _class: details -->
+
+## Mobile Architecture - Real-world
+
+| Component | Architecture | Purpose |
+| - | - | - |
+| Page Layouts | Views | Presentation |
+| Navigation Logic | ViewModels | Navigation Router |
+| Code Behind | ViewModels | Presentation Logic |
+| Code Behind | ViewModels | Data Manipulation Logic |
+| Local Caches | Data Service | Data Source Logic |
+| Data Access | API Services | Data Translation Logic |
+| Data Access | Models | Internal Data Definitions |
+| Data Access | Data Transfer Objects | External Data Definitions |
+
+---
+
+<!-- @@@ Mobile Architecture - Network @@@ -->
+
+<!-- _class: details -->
+
+## Mobile Architecture - Network
+
+<br />
+
+![width:1100px](./images/architecture/mobile-real-world-network.drawio.svg)
+
+---
+
+<!-- @@@ Mobile Architecture - Solution @@@ -->
+
+<!-- _class: details -->
+
+## Mobile Architecture - Solution
+
+<br />
+
+![width:1100px](./images/architecture/mobile-real-world-solution.drawio.svg)
+
+---
+
+<!-- @@@ Section - What is ReactiveUI? @@@ -->
+
+<!-- _class: section_title -->
+
+## Part 3
+
+<br />
+
+### How Reactive UI Helps
+
+---
+
 <!-- @@@  @@@ -->
 
 <!-- _class: details -->
 
-### ReactiveUI
+### Login - XAML
 
-<div class="columns-two">
+```xml
+    <VerticalStackLayout Grid.Row="1" Spacing="6">
+      <Label Text="First Name" TextColor="{StaticResource PrimaryDarkText}" />
+      <Entry x:Name="FirstName"
+        TextChanged="Entry_OnTextChanged"
+        TextColor="{StaticResource Primary}" />
+    </VerticalStackLayout>
+    <VerticalStackLayout Grid.Row="2" Spacing="6">
+      <Label Text="Last Name" TextColor="{StaticResource PrimaryDarkText}" />
+      <Entry x:Name="LastName"
+        TextChanged="Entry_OnTextChanged"
+        TextColor="{StaticResource Primary}" />
+    </VerticalStackLayout>
+    <Button x:Name="LoginButton"
+      BackgroundColor="{StaticResource Tertiary}"
+      Clicked="LoginButton_OnClicked"
+      IsEnabled="False"
+      Text="Login"
+      TextColor="{StaticResource White}" />
 
-<div class="column">
-
-<!-- _class: details_list -->
-
-- Light MVVM framework over Rx.NET
-- Smart property-change notifications
-- Control of thread scheduling
-- Complex command functionality
-- Supports ViewModel navigation
-- Allow automatic data persistence
-
-</div>
-
-<div>
-
-```csharp
-this.WhenAnyValue(x => x.SearchQuery)
-    .Throttle(TimeSpan.FromSeconds(0.8),
-      RxApp.TaskpoolScheduler)
-    .Select(query => query?.Trim())
-    .DistinctUntilChanged()
-    .Where(query =>
-      !string.IsNullOrWhiteSpace(query))
-    .ObserveOn(RxApp.MainThreadScheduler)
-    .InvokeCommand(ExecuteSearch);
 ```
 
-</div>
+---
 
-</div>
+<!-- @@@  @@@ -->
+
+<!-- _class: details -->
+
+### .NET - Event Handlers
+
+```csharp
+    private void Entry_OnTextChanged(object? sender, TextChangedEventArgs e)
+    {
+        LoginButton.IsEnabled =
+            !IsNullOrWhiteSpace(FirstName.Text)
+            && !IsNullOrWhiteSpace(LastName.Text);
+    }
+
+    private async void LoginButton_OnClicked(object? sender, EventArgs e)
+    {
+        var firstName = FirstName.Text;
+        if (Users.TryGetValue(firstName, out var lastName))
+        {
+            if (lastName == LastName.Text)
+            {
+                UnauthenticatedMessage.IsVisible = false;
+                var homePageRoute = $"home?firstName={firstName}&lastName={lastName}";
+                await Shell.Current.GoToAsync(homePageRoute, animate: true);
+            }
+        }
+        UnauthenticatedMessage.IsVisible = true;
+    }
+```
 
 ---
 
@@ -488,26 +493,7 @@ ReactiveCommand
 
 ---
 
-<!-- @@@  @@@ -->
-
-<!-- _class: details -->
-
-### Refit
-
-```csharp
-public interface IGitHubApi
-{
-    [Get("/users/{user}")]
-    Task<User> GetUser(string user);
-}
-
-var gitHubApi = RestService.For<IGitHubApi>("https://api.github.com");
-var octocat = await gitHubApi.GetUser("octocat");
-```
-
----
-
-<!-- @@@  @@@ -->
+<!-- @@@ Dynamic Data @@@ -->
 
 <!-- _class: details -->
 
@@ -529,15 +515,75 @@ var myOperation = myTradeCache.Connect()
 
 ---
 
-<!-- @@@ Section 5 @@@ -->
+<!-- @@@ Refit @@@ -->
 
-<!-- _class: section_title -->
+<!-- _class: details -->
 
-## Part 4
+### Refit
 
-<br />
+```csharp
+public interface IGitHubApi
+{
+    [Get("/users/{user}")]
+    Task<User> GetUser(string user,
+      [Authorize("Bearer")] string token);
+}
 
-### References
+var gitHubApi = RestService.For<IGitHubApi>("https://api.github.com");
+
+// Will add the header "Authorization: Bearer OAUTH-TOKEN}" to the request
+var octocat = await gitHubApi.GetUser("octocat", "OAUTH-TOKEN");
+
+```
+
+---
+
+<!-- @@@ Akavache @@@ -->
+
+<!-- _class: details -->
+
+### Akavache
+
+```csharp
+// Store an object
+var user = new User { Name = "John", Email = "john@example.com" };
+await CacheDatabase.UserAccount.InsertObject("current_user", user);
+
+// Retrieve an object
+var cachedUser =
+  await CacheDatabase.UserAccount.GetObject<User>("current_user");
+
+// Store with expiration
+await CacheDatabase.LocalMachine.InsertObject("temp_data",
+  someData, DateTimeOffset.Now.AddHours(1));
+
+// Get or fetch pattern
+var data =
+  await CacheDatabase.LocalMachine.GetOrFetchObject("api_data",
+    async () => await httpClient.GetFromJsonAsync<ApiResponse>(
+      "https://api.example.com/data"));
+```
+
+---
+
+<!-- @@@ Splat @@@ -->
+
+<!-- _class: details -->
+
+### Splat
+
+- Service Locator
+
+```csharp
+// Register services at application startup
+Locator.CurrentMutable.Register<IToaster>(() => new Toaster());
+Locator.CurrentMutable.RegisterConstant<IConfiguration>(myConfig);
+Locator.CurrentMutable.RegisterLazySingleton<ILogger>(() => new FileLogger());
+
+// Resolve services anywhere in your application
+var toaster = Locator.Current.GetService<IToaster>();
+var config = Locator.Current.GetService<IConfiguration>();
+```
 
 ---
 
@@ -551,17 +597,15 @@ var myOperation = myTradeCache.Connect()
 
 <div class="column-4-5ths">
 
-##### Presentations
-
-- Michael Stonis - Rx, RxUI, and Xamarin.Forms (2 PDFs)
-
-  [github.com/TheEightBot/Reactive-Examples](https://github.com/TheEightBot/Reactive-Examples)
-
-##### Books
+##### Media
 
 - [Rx.NET in Action](https://www.manning.com/books/rx-dot-net-in-action) by Tamir Dresher (Manning)
 
 - [You, I, and ReactiveUI](https://kent-boogaart.com/you-i-and-reactiveui/) by Kent Boogart (self-published)
+
+- Michael Stonis - Rx, RxUI, and Xamarin.Forms (2 PDFs)
+
+  [github.com/TheEightBot/Reactive-Examples](https://github.com/TheEightBot/Reactive-Examples)
 
 ##### Frameworks
 
@@ -590,15 +634,3 @@ var myOperation = myTradeCache.Connect()
 <span class="break" />
 
 </div>
-
----
-
-<!-- @@@ Section 5 @@@ -->
-
-<!-- _class: section_title -->
-
-## Part 5
-
-<br />
-
-### Questions?

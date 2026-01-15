@@ -188,3 +188,7 @@ section.talk_topics ul li {
 span.break {
   line-height: 2em;
 }
+
+table {
+  font-size: 20pt;
+}
