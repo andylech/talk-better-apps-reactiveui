@@ -1,0 +1,21 @@
+{
+  "markdownlint.config": {
+    "MD001": false,
+    "MD004": false,
+    "MD026": false
+  },
+  "markdown.marp.themes": ["./themes/custom.css"],
+  "markdown.marp.html": "default",
+  "markdown.marp.exportType": "html",
+  "cSpell.words": [
+    "Akavache",
+    "Architecting",
+    "Linq",
+    "marp",
+    "MVVM",
+    "reactivemarbles",
+    "reactiveui",
+    "reactivex",
+    "Stonis"
+  ]
+}

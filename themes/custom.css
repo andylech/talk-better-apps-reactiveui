@@ -1,0 +1,190 @@
+/* @theme custom */
+
+/* Copied from Mobile Secrets talk to start */
+/* Magic of step-through is "*" bullet points (w/ "list-style-type: none;") */
+
+@import 'uncover';
+
+@font-face {
+  font-family: Biryani_ExtraBold;
+  src: url('../fonts/Google Fonts/Biryani/Biryani-ExtraBold.ttf');
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: Biryani_SemiBold;
+  src: url('../fonts/Google Fonts/Biryani/Biryani-SemiBold.ttf');
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: Pangolin;
+  src: url('../fonts/Google Fonts/Pangolin/Pangolin-Regular.ttf');
+  font-weight: regular;
+}
+
+div.attribution {
+  font-size: 16px;
+  padding-top: 24px;
+}
+
+section.details img {
+  margin: 0.5em 0;
+}
+
+div.detail-summary,
+section.details ul li {
+  font-size: 20px;
+  margin-bottom: 0.5em;
+}
+
+div.commentary ul li {
+  font-size: 24px;
+  font-weight: bold;
+  list-style-type: none;
+  text-align: center;
+}
+
+div.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.column-1-5th,
+div.column-4-5ths {
+  margin: 0;
+  padding: 0;
+}
+
+div.columns-three {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+div.columns-two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+div.columns-two-5ths-4-1 {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: 0.5rem;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 48px;
+}
+
+h4 {
+  font-size: 36px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+section {
+  font-family: Biryani_SemiBold;
+}
+
+section.details h3,
+section.section_title h2,
+section.summary h3,
+section.talk_topics h3 {
+  line-height: 1em;
+}
+
+section.details ul li {
+  line-height: 1.5em;
+}
+
+/* TODO Better name */
+section.details_list ul li {
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+section.details ul li b {
+  font-family: Biryani_ExtraBold;
+}
+
+section.references_list h5 {
+  margin: 1ex 0;
+  text-align: start;
+}
+
+section.references_list ul {
+  margin: 0;
+}
+
+section.references_list ul li {
+  font-size: 24px;
+  line-height: 1.0em;
+}
+
+section.section_title h4 {
+  font-size: 36px;
+  line-height: 1em;
+  margin: 1em 0;
+}
+
+div.commentary ul,
+section.section_title,
+section.section_title ul li {
+  /* font-family: Pangolin, cursive; */
+  text-align: center;
+}
+
+section.section_title h2 {
+  line-height: 1em;
+  margin: 0;
+}
+
+section.section_title h3 {
+  line-height: 1em;
+  margin: 1em 0;
+}
+
+section.section_title ul li {
+  list-style-type: none;
+}
+
+section.summary ul li {
+  font-size: 36px;
+  line-height: 1.75em;
+}
+
+section.talk_title h1 {
+  line-height: 1.75em;
+}
+
+section.talk_title h2,
+section.talk_title ul li {
+  line-height: 1.75em;
+}
+
+section.talk_topics ul li {
+  font-size: 36px;
+  line-height: 2em;
+}
+
+/* HACK */
+span.break {
+  line-height: 2em;
+}
